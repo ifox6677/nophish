@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId 'de.tudarmstadt.informatik.secuso.phishedu2'
         minSdkVersion 10
@@ -21,9 +20,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.2'
-    compile project(':BaseGameUtils')
-    compile 'com.google.code.gson:gson:2.3'
-    compile files('libs/android-json-rpc-0.2.jar')
-    compile 'com.android.support:appcompat-v7:21.0.2'
+    implementation 'com.android.support:support-v4:21.0.2'
+    implementation project(':BaseGameUtils')
+    implementation 'com.google.code.gson:gson:2.3'
+    implementation files('libs/android-json-rpc-0.2.jar')
+    implementation 'com.android.support:appcompat-v7:21.0.2'
 }

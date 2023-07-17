@@ -11,17 +11,16 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.1'
+        classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:20.0.+'
-    compile 'com.android.support:support-v4:20.0.+'
+    api 'com.android.support:appcompat-v7:20.0.+'
+    api 'com.android.support:support-v4:20.0.+'
 }
 
 android {
     compileSdkVersion 20
-    buildToolsVersion '27.0.3'
 }
 
