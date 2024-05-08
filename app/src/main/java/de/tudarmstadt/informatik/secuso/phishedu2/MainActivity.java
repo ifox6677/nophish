@@ -29,8 +29,9 @@ import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +54,7 @@ import de.tudarmstadt.informatik.secuso.phishedu2.backend.PhishResult;
 //import com.google.android.gms.common.api.GoogleApiClient;
 //import com.google.android.gms.games.Games;
 
-public class MainActivity extends ActionBarActivity implements FrontendController, OnLevelChangeListener, BackendInitListener, OnLevelstateChangeListener {
+public class MainActivity extends AppCompatActivity implements FrontendController, OnLevelChangeListener, BackendInitListener, OnLevelstateChangeListener {
     Map<String, PhishBaseActivity> fragCache = new HashMap<String, PhishBaseActivity>();
 	String current_frag;
 	
