@@ -22,18 +22,6 @@ package de.tudarmstadt.informatik.secuso.phishedu2.backend.networkTasks;
 
 import android.os.AsyncTask;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.StatusLine;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Arrays;
-
-import de.tudarmstadt.informatik.secuso.phishedu2.backend.BackendControllerImpl;
-import de.tudarmstadt.informatik.secuso.phishedu2.backend.BasePhishURL;
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.PhishAttackType;
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.PhishURL;
 
@@ -56,38 +44,38 @@ public class GetUrlsTask extends AsyncTask<Integer, Integer, PhishURL[]>{
 
 	protected PhishURL[] doInBackground(Integer... params) {
 
-        if(false){
-            int count = params[0];
-            this.type = PhishAttackType.NoPhish;
-            for(PhishAttackType type : PhishAttackType.values()){
-                if(type.getValue() == params[1]){
-                    this.type=type;
-                    break;
-                }
-            }
-            try {
-                String url = "https://api.no-phish.de/urls/"+this.type.toString()+".json";
-                HttpResponse response = new DefaultHttpClient().execute(new HttpGet(url));
-                StatusLine statusLine = response.getStatusLine();
-                if(statusLine.getStatusCode() == HttpStatus.SC_OK){
-                    ByteArrayOutputStream out = new ByteArrayOutputStream();
-                    response.getEntity().writeTo(out);
-                    out.close();
-                    BasePhishURL[] result = BackendControllerImpl.deserializeURLs(out.toString());
-                    if(result.length > count){
-                        result = Arrays.copyOf(result, count);
-                    }
-                    return result;
-                } else{
-                    //Closes the connection.
-                    response.getEntity().getContent().close();
-                    throw new IOException(statusLine.getReasonPhrase());
-                }
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-		}
+//        if(false){
+//            int count = params[0];
+//            this.type = PhishAttackType.NoPhish;
+//            for(PhishAttackType type : PhishAttackType.values()){
+//                if(type.getValue() == params[1]){
+//                    this.type=type;
+//                    break;
+//                }
+//            }
+//            try {
+//                String url = "https://api.no-phish.de/urls/"+this.type.toString()+".json";
+//                HttpResponse response = new DefaultHttpClient().execute(new HttpGet(url));
+//                StatusLine statusLine = response.getStatusLine();
+//                if(statusLine.getStatusCode() == HttpStatus.SC_OK){
+//                    ByteArrayOutputStream out = new ByteArrayOutputStream();
+//                    response.getEntity().writeTo(out);
+//                    out.close();
+//                    BasePhishURL[] result = BackendControllerImpl.deserializeURLs(out.toString());
+//                    if(result.length > count){
+//                        result = Arrays.copyOf(result, count);
+//                    }
+//                    return result;
+//                } else{
+//                    //Closes the connection.
+//                    response.getEntity().getContent().close();
+//                    throw new IOException(statusLine.getReasonPhrase());
+//                }
+//            } catch (IOException e) {
+//                // TODO Auto-generated catch block
+//                e.printStackTrace();
+//            }
+//		}
 		return new PhishURL[0];
 	}
 
