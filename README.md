@@ -1,8 +1,6 @@
 # NoPish
 
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
-     alt="Get it on Google Play"
-     height="80">](https://play.google.com/store/apps/details?id=de.tudarmstadt.informatik.secuso.phishedu2)
+> :warning: **Please note:** This project has not been updated in a long time. The content within the app is no longer up-to-date with our [NoPhish](https://secuso.aifb.kit.edu/english/Education_and_Training_Materials.php) material.
 
 Phishing is a major issue of the Internet where users are tricked into disclosing their confidential data, such as login or credit card information, usually via fraudulent websites. The gained information is exploited by the phishers with the purpose of impersonating their victims for financial benefits. 
 
@@ -16,8 +14,8 @@ Further development requires Android Studio, we recommend to use at least versio
  
 ### API Reference
 
-- Mininum SDK: 10
-- Target SDK: 19
+- Mininum SDK: 14
+- Target SDK: 33
 
 ## License
 

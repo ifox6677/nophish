@@ -20,11 +20,13 @@
 
 package de.tudarmstadt.informatik.secuso.phishedu2;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -104,6 +106,9 @@ public abstract class SwipeActivity extends PhishBaseActivity implements ViewPag
 		super.updateUI(v);
 
 		final ViewPager mPager= (ViewPager) v.findViewById(R.id.pager);
+		if(mPager == null) {
+			return;
+		}
 		mPager.setAdapter(new SwipePageAdapter(getFragmentManager(),this));
 		mPager.setOnPageChangeListener(this);
 
@@ -206,7 +211,7 @@ public abstract class SwipeActivity extends PhishBaseActivity implements ViewPag
 
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
-			View view = activity.getPage(position, activity.getLayoutInflater(getArguments()), container, getArguments());
+			@SuppressLint("RestrictedApi") View view = activity.getPage(position, activity.getLayoutInflater(getArguments()), container, getArguments());
 			view.setOnClickListener(new ClickListener(position));
 			updateScore(view);
 			for (int i : getClickables()) {

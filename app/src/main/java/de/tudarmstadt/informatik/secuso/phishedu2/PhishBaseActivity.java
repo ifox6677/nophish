@@ -24,8 +24,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,7 +35,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.lang.reflect.Field;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.BackendController.Levelstate;
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.BackendController.OnLevelChangeListener;
@@ -46,46 +46,46 @@ import de.tudarmstadt.informatik.secuso.phishedu2.backend.BackendControllerImpl;
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.FrontendController;
 
 public abstract class PhishBaseActivity extends Fragment implements OnClickListener, OnLevelChangeListener, OnLevelstateChangeListener {
-	
+
 	public void updateUI(){
 		if(getActivity()!=null){
-			
+
 			for (int i : getClickables()) {
 				View clickview = getActivity().findViewById(i);
 				if(clickview != null){
-					clickview.setOnClickListener(this);	
+					clickview.setOnClickListener(this);
 				}
 			}
-			
+
 			setTitles();
 			updateScore();
-			
+
 			updateUI(getActivity());
 		}
 	}
-	
+
 	FrontendController getFrontedController(){
 		return (FrontendController) getActivity();
 	}
-	
+
 	void updateUI(Activity activity){};
-	
+
 	/**
 	 * Get the id of the Layout of this fragment.
 	 * You have to implement one of this and {@link #getLayout(LayoutInflater, ViewGroup, Bundle)}
-	 * @return the base layout 
+	 * @return the base layout
 	 */
 	public int getLayout(){
 		return 0;
 	}
-	
+
 	public View getLayout(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		return null;
 	}
-	
+
 	/**
 	 * If the fragment wants to react on the backpressed button it can implements this function
-	 * @return return true to continue with the back event. False otherwise. 
+	 * @return return true to continue with the back event. False otherwise.
 	 */
 	public void onBackPressed(){
 		if(enableHomeButton()){
@@ -105,22 +105,22 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 	int getIcon(){return 0;}
 	boolean enableHomeButton(){return true;};
 	boolean enableRestartButton(){return false;};
-	
+
 	public void onSwitchTo(){};
-	
+
 	@Override
 	public void onResume() {
 		super.onResume();
 		updateUI();
 	}
-	
+
 	/**
 	 * If there are clickable elements on this page you must list them here and implement {@link #onClick(View)}
 	 * @return the list of resource IDs of the clickable elements.
 	 */
 	public int[] getClickables(){return new int[0];};
 	public void onClick(View view){};
-	
+
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View v;
 		if(getLayout()!=0){
@@ -142,14 +142,14 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 //                }
 //            });
 //        }
-		
+
 		setHasOptionsMenu(true);
 
-		return v;		 
+		return v;
 	}
-	
+
 	private void setTitles(){
-		android.support.v7.app.ActionBar ab = ((ActionBarActivity)getActivity()).getSupportActionBar();
+		ActionBar ab = ((AppCompatActivity)getActivity()).getSupportActionBar();
         //ab.setDisplayUseLogoEnabled(true);
 		ab.setDisplayHomeAsUpEnabled(enableHomeButton());
         ab.setDisplayShowHomeEnabled(true);
@@ -175,7 +175,7 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
             ab.setSubtitle(getString(R.string.level_11_splash_subtitle));
         }
 	}
-	
+
 	protected void updateScore(){
 		Activity view = getActivity();
 		if(view != null){
@@ -199,9 +199,9 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 			urlsText.setText(Integer.toString(BackendControllerImpl.getInstance().getCorrectlyFoundURLs()));
 			urlsGoalText.setText(Integer.toString(BackendControllerImpl.getInstance().getLevelInfo().levelCorrectURLs()));
 			LevelScoreText.setText(Integer.toString(BackendControllerImpl.getInstance().getLevelPoints()));
-			
+
 			int remaininLives = BackendControllerImpl.getInstance().getLifes();
-			
+
 			//now hide hearts if required
 			switch (remaininLives) {
 			case 0:
@@ -223,8 +223,8 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 			}
 		}
 	}
-	
-	
+
+
 	protected void levelRestartWarning() {
 		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
@@ -235,7 +235,7 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 		alertDialog.setMessage(getString(R.string.level_restart_text));
 
 		alertDialog.setPositiveButton(R.string.level_restart_positive_button, new DialogInterface.OnClickListener() {
-			
+
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				BackendControllerImpl.getInstance().restartLevel();
@@ -253,7 +253,7 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 		// Showing Alert Message
 		alertDialog.show();
 	}
-	
+
 	protected void levelCanceldWarning() {
 		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
@@ -264,7 +264,7 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 		alertDialog.setMessage(getString(R.string.level_cancel_text));
 
 		alertDialog.setPositiveButton(R.string.level_cancel_positive_button, new DialogInterface.OnClickListener() {
-			
+
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				BackendControllerImpl.getInstance().abortLevel();
@@ -282,20 +282,20 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 		// Showing Alert Message
 		alertDialog.show();
 	}
-	
+
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);
 		inflater.inflate(R.menu.urltask_menu, menu);
 	}
-	
+
 	@Override
 	public void onPrepareOptionsMenu(Menu menu) {
 		super.onPrepareOptionsMenu(menu);
 		MenuItem restart = menu.findItem(R.id.restart_level);
 		restart.setVisible(enableRestartButton());
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int itemId = item.getItemId();
@@ -307,44 +307,44 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	int getLevel(){
 		return BackendControllerImpl.getInstance().getLevel();
 	}
-	
-	@Override
-	public void onDetach() {
-	    super.onDetach();
 
-	    try {
-	        Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
-	        childFragmentManager.setAccessible(true);
-	        childFragmentManager.set(this, null);
+//	@Override
+//	public void onDetach() {
+//	    super.onDetach();
+//
+//	    try {
+//	        Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
+//	        childFragmentManager.setAccessible(true);
+//	        childFragmentManager.set(this, null);
+//
+//	    } catch (NoSuchFieldException e) {
+//	        throw new RuntimeException(e);
+//	    } catch (IllegalAccessException e) {
+//	        throw new RuntimeException(e);
+//	    }
+//	}
 
-	    } catch (NoSuchFieldException e) {
-	        throw new RuntimeException(e);
-	    } catch (IllegalAccessException e) {
-	        throw new RuntimeException(e);
-	    }
-	}
-	
 	protected void switchToFragment(Class<?extends PhishBaseActivity> target){
 		((MainActivity)getActivity()).switchToFragment(target);
 	}
-	
+
 	protected void switchToFragment(Class<?extends PhishBaseActivity> target, Bundle args){
 		((MainActivity)getActivity()).switchToFragment(target,args);
 	}
-	
+
 	@Override
 	public void onLevelChange(int new_levelid, boolean showRepeat) {}
 
 	@Override
 	public void onLevelstateChange(Levelstate new_state, int level) {}
-	
+
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 	    //No call for super(). Bug on API Level > 11.
 	}
-	
+
 }

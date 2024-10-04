@@ -133,10 +133,12 @@ public class LevelIntroActivity extends SwipeActivity {
 		Class next_activity = URLTaskActivity.class;
 		if (this.getLevel() == 0) {
             BackendControllerImpl.getInstance().skipLevel0();
-            next_activity = AwarenessActivity.class;
+			BackendControllerImpl.getInstance().startLevel(1);
+            next_activity = LevelIntroActivity.class;
 		} else if (this.getLevel() == 1) {
-			next_activity = FindAddressBarActivity.class;
             BackendControllerImpl.getInstance().skipLevel1();
+			BackendControllerImpl.getInstance().startLevel(2);
+			next_activity = LevelIntroActivity.class;
 		} else if (this.getLevel() == BackendControllerImpl.getInstance()
 				.getLevelCount() - 1) {
 			next_activity = AppEndActivity.class;
