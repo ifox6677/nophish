@@ -20,6 +20,9 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 20
+    defaultConfig{
+        minSdkVersion 14
+        compileSdk 20
+    }
 }
 

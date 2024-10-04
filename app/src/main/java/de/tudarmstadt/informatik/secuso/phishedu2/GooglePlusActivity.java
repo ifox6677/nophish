@@ -33,7 +33,7 @@ public class GooglePlusActivity extends PhishBaseActivity {
 
 	void updateUI(Activity v){
 		// show sign-out button, hide the sign-in button
-		v.findViewById(R.id.sign_in_button).setVisibility(showSignIn ? View.VISIBLE : View.GONE);
+		//v.findViewById(R.id.sign_in_button).setVisibility(showSignIn ? View.VISIBLE : View.GONE);
 		v.findViewById(R.id.sign_out_button).setVisibility(showSignIn ? View.GONE : View.VISIBLE);
 
 		// findViewById(R.id.button_show_leaderboard_rate).setVisibility(View.VISIBLE);
@@ -89,7 +89,7 @@ public class GooglePlusActivity extends PhishBaseActivity {
 	@Override
 	public int[] getClickables() {
 		return new int[] {
-				R.id.sign_in_button,
+				//R.id.sign_in_button,
 				R.id.sign_out_button,
 				R.id.button_show_online_achievement,
 				R.id.button_show_leaderboard_rate,

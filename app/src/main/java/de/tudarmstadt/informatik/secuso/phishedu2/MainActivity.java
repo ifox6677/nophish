@@ -20,6 +20,7 @@
 
 package de.tudarmstadt.informatik.secuso.phishedu2;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -293,7 +294,8 @@ public class MainActivity extends AppCompatActivity implements FrontendControlle
 		return BackendControllerImpl.getInstance().getGameHelper().getApiClient();
 	}*/
 
-	@Override
+	@SuppressLint("MissingSuperCall")
+    @Override
 	protected void onSaveInstanceState(Bundle outState) {
 		//No call for super(). Bug on API Level > 11.
 		outState.putString("current_frag", current_frag);

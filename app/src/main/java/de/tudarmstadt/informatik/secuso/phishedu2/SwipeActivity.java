@@ -20,6 +20,7 @@
 
 package de.tudarmstadt.informatik.secuso.phishedu2;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import androidx.fragment.app.FragmentManager;
@@ -210,7 +211,7 @@ public abstract class SwipeActivity extends PhishBaseActivity implements ViewPag
 
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
-			View view = activity.getPage(position, activity.getLayoutInflater(getArguments()), container, getArguments());
+			@SuppressLint("RestrictedApi") View view = activity.getPage(position, activity.getLayoutInflater(getArguments()), container, getArguments());
 			view.setOnClickListener(new ClickListener(position));
 			updateScore(view);
 			for (int i : getClickables()) {
