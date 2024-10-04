@@ -120,7 +120,7 @@ public class AwarenessActivity extends PhishBaseActivity {
 			} else {
 				// Input is OK send email
 				// invoke Backendcontroller
-				BackendControllerImpl.getInstance().sendMail(from, to, userMessage);
+				//BackendControllerImpl.getInstance().sendMail(from, to, userMessage);
 
 				// Pop up with go to E-Mail on your Smartphone
 				showAlertDialog();

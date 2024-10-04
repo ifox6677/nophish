@@ -24,8 +24,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -149,7 +151,7 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 	}
 	
 	private void setTitles(){
-		android.support.v7.app.ActionBar ab = ((ActionBarActivity)getActivity()).getSupportActionBar();
+		ActionBar ab = ((AppCompatActivity)getActivity()).getSupportActionBar();
         //ab.setDisplayUseLogoEnabled(true);
 		ab.setDisplayHomeAsUpEnabled(enableHomeButton());
         ab.setDisplayShowHomeEnabled(true);
@@ -312,21 +314,21 @@ public abstract class PhishBaseActivity extends Fragment implements OnClickListe
 		return BackendControllerImpl.getInstance().getLevel();
 	}
 	
-	@Override
-	public void onDetach() {
-	    super.onDetach();
-
-	    try {
-	        Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
-	        childFragmentManager.setAccessible(true);
-	        childFragmentManager.set(this, null);
-
-	    } catch (NoSuchFieldException e) {
-	        throw new RuntimeException(e);
-	    } catch (IllegalAccessException e) {
-	        throw new RuntimeException(e);
-	    }
-	}
+//	@Override
+//	public void onDetach() {
+//	    super.onDetach();
+//
+//	    try {
+//	        Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
+//	        childFragmentManager.setAccessible(true);
+//	        childFragmentManager.set(this, null);
+//
+//	    } catch (NoSuchFieldException e) {
+//	        throw new RuntimeException(e);
+//	    } catch (IllegalAccessException e) {
+//	        throw new RuntimeException(e);
+//	    }
+//	}
 	
 	protected void switchToFragment(Class<?extends PhishBaseActivity> target){
 		((MainActivity)getActivity()).switchToFragment(target);

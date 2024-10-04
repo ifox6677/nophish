@@ -21,11 +21,12 @@
 package de.tudarmstadt.informatik.secuso.phishedu2;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.viewpager.widget.ViewPager;
 
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.BackendControllerImpl;
 import de.tudarmstadt.informatik.secuso.phishedu2.backend.NoPhishLevelInfo;
