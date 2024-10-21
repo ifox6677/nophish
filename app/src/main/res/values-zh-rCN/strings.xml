@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">NoPhish</string>
+    <string name="app_name">钓鱼人</string>
     <string name="action_restart">重新启动</string>
 
     <!-- titles -->
