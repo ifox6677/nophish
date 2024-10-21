@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NoPhish</string>
+    <string name="action_restart">重新启动</string>
+
+    <!-- titles -->
+    <string name="title_activity_awareness">电子邮件伪造</string>
+    <string name="title_activity_credits">鸣谢</string>
+
+    <!-- splash -->
+
+    <!-- menu buttons -->
+    <string name="end_app">退出应用</string>
+    <string name="end_app_text">你确定要退出应用吗？</string>
+    <string name="end_app_yes">是</string>
+    <string name="end_app_no">否</string>
+    <string name="reset_app">重置</string>
+    <string name="reset_app_text">你确定要重置应用吗？\n所有进度将会丢失。\n\n应用将在几秒钟内重新启动。</string>
+    <string name="start_menu">了解如何保护自己免受互联网“网络钓鱼”的危险！</string>
+    <string name="sign_out">登出</string>
+    <string name="button_play">开始</string>
+    <string name="button_play_on">继续游戏</string>
+    <string name="button_level_overview">关卡概览</string>
+    <string name="button_more_info">更多信息</string>
+    <string name="button_about">关于我们</string>
+    <string name="button_show_online_achievement">你的成就</string>
+    <string name="button_show_leaderboard_rate">排行榜评分</string>
+    <string name="button_show_leaderboard_total">发现的网络钓鱼排行榜</string>
+    <string name="button_show_leaderboard_total_points">最高分</string>
+    <string name="button_delete_remote_data">在线删除游戏</string>
+    <string name="button_show_snapshots">显示所有快照</string>
+    <string name="google_plus_text">如果你想与朋友在 Google+ 上分享你的游戏并保存你的分数，请使用 Google+ 登录。</string>
+    <string name="google_plus_disclaimer">请注意，目前无法删除服务和排名。分数可以删除。</string>
+    <string name="google_plus_data_deleted">你的在线分数已删除。</string>
+    <string name="google_plus_snapshot_load_problem">加载你的分数时出现问题：</string>
+    <string name="google_plus_snapshot_load_ok">你的在线分数已加载。</string>
+    <string name="button_social">Google Play</string>
+    <string name="button_reset">全部重置</string>
+    <string name="button_credits">鸣谢</string>
+    <string name="button_quiz">知识测试</string>
+    <string name="button_close">关闭应用</string>
+    <string name="quiz_text">这里有三个链接，帮助你测试你的网络钓鱼知识。\n这些测试最好在平板电脑上进行（由于示例的展示方式）。\n\n点击测验链接，你将被重定向到 SoSciSurvey 网站。SoSciSurvey 旨在进行在线科学调查，允许同时评估和改进 NoPhish。</string>
+
+    <!-- More Info -->
+    <string name="info_apwg">反网络钓鱼工作组</string>
+    <string name="info_security_comic">关于网络钓鱼的漫画</string>
+    <string name="info_how_phishing_works">网络钓鱼如何运作</string>
+    <string name="url_apwg">http://www.antiphishing.org</string>
+    <string name="url_securitycomic">http://www.securitycartoon.com</string>
+    <string name="url_how_phishing_works">http://computer.howstuffworks.com/phishing.htm</string>
+    <string name="more_info_text">这里提供了一些关于网络钓鱼主题的外部链接集合。此集合并不完整。</string>
+
+    <!-- About -->
+    <string name="about_text">此应用由达姆施塔特工业大学的研究组 SECUSO 开发。该应用的第一个版本由 Clemens Bergmann 和 Gamze Canova 作为他们硕士论文的一部分开发。该应用基于用户研究进行评估，并根据评估结果进行开发。更改由 Philipp Rack 完成。英语翻译由 Chris Wilder 提供。</string>
+    <string name="about_contact"><b>达姆施塔特工业大学</b>\n计算机科学系\n安全性、可用性与社会专业\n管理：Prof. Dr. Melanie Volkamer\nS4|14楼\nMornewegstr. 30\n64293 达姆施塔特\n\n电子邮件：kontakt@secuso.org</string>
+
+    <!-- LEVEL TITLES -->
+    <string name="level_title_00">介绍 1</string>
+    <string name="level_title_01">介绍 2</string>
+    <string name="level_title_02">第 1 关</string>
+    <string name="level_title_03">第 2 关</string>
+    <string name="level_title_04">第 3 关</string>
+    <string name="level_title_05">第 4 关</string>
+    <string name="level_title_06">第 5 关</string>
+    <string name="level_title_07">第 6 关</string>
+    <string name="level_title_08">第 7 关</string>
+    <string name="level_title_09">第 8 关</string>
+    <string name="level_title_10">第 9 关</string>
+    <string name="level_title_11">总结</string>
+    <string name="level_subtitle_00">网络钓鱼</string>
+    <string name="level_subtitle_01">状态栏</string>
+    <string name="level_subtitle_02">网络地址的结构</string>
+    <string name="level_subtitle_03">IP 地址</string>
+    <string name="level_subtitle_04">随机代理</string>
+    <string name="level_subtitle_05">部门区域</string>
+    <string name="level_subtitle_06">对话主题区域</string>
+    <string name="level_subtitle_07">附加信息</string>
+    <string name="level_subtitle_08">拼写错误</string>
+    <string name="level_subtitle_09">相似字符</string>
+    <string name="level_subtitle_10">安全等级</string>
+    <string name="level_subtitle_11">技巧与提示</string>
+    <string name="level_03_splash_subtitle">对话者根本未出现在网络地址中</string>
+    <string name="level_04_splash_subtitle">IP 地址作为谁区域</string>
+    <string name="level_05_splash_subtitle">部门区域中相似的对话者</string>
+    <string name="level_06_splash_subtitle">对话主题区域中相似的对话者</string>
+    <string name="level_07_splash_subtitle">谁区域中相似的对话者</string>
+    <string name="level_08_splash_subtitle">谁区域中的拼写错误</string>
+    <string name="level_09_splash_subtitle">谁区域中的相似字符</string>
+    <string name="level_10_splash_subtitle">安全等级的范围</string>
+    <string name="level_11_splash_subtitle">技巧与提示</string>
+    <string name="level_11_splash_01_subtitle">混淆的网络地址</string>
+    <string name="level_11_splash_02_subtitle">https:// 的附加信息</string>
+    <string name="level_11_splash_03_subtitle">点击链接的危险</string>
+    <string name="level_11_splash_04_subtitle">更多技巧</string>
+
+    <!-- Awareness activity -->
+    <string name="awareness_text_hint">这里你可以输入任何要出现在电子邮件中的文本。</string>
+    <string name="awareness_email_hint">请尽量输入真实（或存在的）电子邮件地址作为发件人。</string>
+    <string name="btn_send">发送</string>
+    <string name="hint_text">在此输入文本。</string>
+    <string name="awareness_missing_email_sender_or_receiver">请输入发件人和收件人。</string>
+    <string name="awareness_invalid_email">发件人或收件人的电子邮件地址无效。请检查你的输入。</string>
+    <string name="awareness_email_sent">电子邮件已发送</string>
+    <string name="awareness_alert_message">现在请通过你的智能手机检查你的电子邮件。你应该收到了一封虚假的电子邮件。仔细阅读此邮件。通过此邮件你将回到应用。</string>
+    <string name="awareness_second_alert_message">请注意，电子邮件的到达可能需要几分钟的时间。你可能还需要检查垃圾邮件/垃圾邮件文件夹。如果电子邮件未到达，请输入其他发件人地址。</string>
+    <string name="awareness_resend_email">未收到电子邮件</string>
+    <string name="awareness_to_mail">前往邮件应用</string>
+    <string name="awareness_skip">跳过</string>
+	<!-- Buttons -->
+<string name="level_01_exercise_text_01"><b>现在轮到你了</b>\n\n1. 点击“点击这里”按钮，打开一个练习网站。\n\n2. 等待网站完全加载。\n\n3. 完成网站上的任务。当你完成任务后，系统会自动将你重定向到应用程序。</string>
+<string name="level_01_exercise_button_click_here">点击这里</string>
+
+<!-- Level 2 - 示例 -->
+<string name="level_02_example_amazon">http://www.amazon.de</string>
+<string name="level_02_example_googlemail">https://mail.google.com/mail/?shva=1#inbox</string>
+<string name="level_02_example_ebay">http://pages.ebay.de/help/sell/quick-listing-tool.html</string>
+<string name="level_02_example_facebook">https://secure.facebook.com/settings?tab=payments</string>
+<string name="level_02_example_amazon_01">http://www.</string>
+<string name="level_02_example_amazon_02">amazon.de</string>
+<string name="level_02_example_gmail_01">https://mail.</string>
+<string name="level_02_example_gmail_02">google.com</string>
+<string name="level_02_example_gmail_03">/mail/</string>
+<string name="level_02_example_gmail_04">\?shva\=1\#inbox</string>
+<string name="level_02_example_ebay_01">http://pages.</string>
+<string name="level_02_example_ebay_02">ebay.de</string>
+<string name="level_02_example_ebay_03">/help/sell/</string>
+<string name="level_02_example_ebay_04">quick-listing-tool.html</string>
+<string name="level_02_example_facebook_01">https://secure.</string>
+<string name="level_02_example_facebook_02">facebook.com</string>
+<string name="level_02_example_facebook_03">/</string>
+<string name="level_02_example_facebook_04">settings?tab=payments</string>
+<string name="location">位置</string>
+<string name="company">公司</string>
+<string name="departments">部门</string>
+<string name="http">http://</string>
+<string name="https">https://</string>
+<string name="www">www.</string>
+<string name="http_description">安全\n步骤</string>
+<string name="domain">abo.spiegel.de</string>
+<string name="domain_spiegel">spiegel</string>
+<string name="subdomain">abo</string>
+<string name="domain_description">有关联系方的信息</string>
+<string name="path">/digital</string>
+<string name="path_dot_dot_dot">/&#8230;</string>
+<string name="path_description">路径描述</string>
+<string name="domain_de">de</string>
+<string name="dot">.</string>
+<string name="first_attack"><b>首次攻击</b></string>
+<string name="new_attack"><b>新攻击</b></string>
+<string name="slash">/</string>
+<string name="reminder"><b>提醒 - 网络地址</b></string>
+<string name="former_attacks"><b>之前的攻击</b></string>
+
+<!-- Level Texts -->
+
+<!-- Level E1 - 意识提升 -->
+<string name="level_00_intro_00_text_01"><b>网络钓鱼</b>\n\n“网络钓鱼”（Phishing）是一个新造词，结合了两个英文词汇“phreaking”（黑客攻击）和“fishing”（钓鱼）。这是骗子用来通过伪造信息获取你的敏感数据（例如密码、账户信息或信用卡信息）的一种技术。\n\n为了获取敏感数据，骗子会向你发送伪造的信息（例如电子邮件、短信、社交网络或Skype）。这些信息看起来像是来自你信任的人员或机构（例如Amazon、Facebook或你的银行）。伪造的信息形式多样，可能请求你提供私人数据，可能附带危险的文件附件，也可能是所谓的“经典网络钓鱼”信息，即带有危险链接的消息。通过这些经典网络钓鱼手段，骗子希望潜在受害者点击这些危险链接。如果收件人点击了链接，要么直接将恶意软件下载到所用设备（例如PC或智能手机），要么被重定向到骗子的伪造网站，这些网站伪装成被模仿的机构的网站。然而，这实际上是伪造的副本，称为网络钓鱼网站。如果在这些网站上输入了敏感数据，它们将立即被骗子截获。</string>
+<string name="level_00_finish_00_text_01"><b>完成！</b>\n\n你已经成功完成了介绍 1。</string>
+<string name="level_00_intro_02_text_01"><b>从任意发件人发送一封电子邮件给自己</b></string>
+<string name="level_00_intro_02_text_02">你的电子邮件地址：</string>
+<string name="level_00_intro_02_text_03">发件人电子邮件：</string>
+<string name="level_00_intro_02_text_04">可选自由文本：</string>
+<string name="level_00_finish_00a_text_01"><b>没有到达Google？</b>\n\n你可能以为你要进入Google网站。但很遗憾，链接中的电子邮件或其他内容并不可靠，请对电子邮件中的链接及发件人保持警惕。</string>
+<string name="level_00_intro_01_text_01"><b>一般信息：</b>\n\n1.）伪造电子邮件的发件人是很容易的，任何人都能做到，即使没有太多的预备知识。因此，当你评估消息的可信度时（电子邮件、Skype、社交网络等），尤其是当它们包含链接时，应该格外小心。不仅是看似熟悉的链接，对于那些例如标注为“点击这里”的链接也要保持警觉。\n\n2.）此外，点击链接并不一定会带你到链接中所标明的网络地址。大多数电子邮件应用程序不会立即显示链接的实际目标。\n\n你可以通过长按链接来查看链接的真正目标。根据不同的邮件程序，目标地址会在鼠标指针旁边的小窗口中显示，或者在邮件底部的状态栏中显示。\n\n你可以通过查看网络地址（即链接）识别钓鱼邮件和钓鱼网站。因此，在本应用中，我们会教你如何在点击之前验证网络地址的真实性。</string>
+<string name="level_00_finish_01_text_01"><b>顺便说一句，这不仅仅适用于电子邮件！</b>\n\n危险不仅潜藏在电子邮件中的链接后面，任何时候点击链接时都可能存在风险（例如在其他网站上，在短信中或Facebook或Twitter上的消息中）。</string>
+<string name="level_00_finish_02_text_01"><b>任何人都可以创建网络地址和网站副本！</b>\n\n任何人都可以创建网络地址和网站副本。显示出网站的相同副本几乎毫不费力，且几乎不需要成本。因此，即使你访问了一个网站，所显示的网站乍一看似乎是正确的，但实际上可能是一个熟悉网站的副本，是用来伤害你的。</string>
+<string name="level_00_finish_03_text_01"><b>原始网站</b>\n\n接下来我们向你展示<b>Facebook</b>网站的一部分<b>原始网站</b>。你可以从绿色标出的网络地址https://m.facebook.com/上辨认出这是原始网站。</string>
+<string name="level_00_finish_04_text_01"><b>复制/钓鱼网站</b>\n\n接下来我们向你展示一部分Facebook的<b>复制网站</b>或所谓的“<b>钓鱼网站</b>”，显示在红色标出的假网址https://pages.no-phish.de/上。</string>
+<string name="level_00_finish_05_text_01"><b>识别钓鱼网站</b>\n\n在输入数据之前，特别是在收到带有链接的意外电子邮件时，务必要检查网站的网络地址。\n\n通过这个应用程序，你将学习如何检查网络地址。</string>
+<string name="level_00_finish_06_text_01"><b>进一步的游戏玩法</b>\n\n因为检测网络地址攻击的类型有很多，我们将任务分成不同的关卡。\n\n每个关卡包含两个部分：</string>
+<string name="level_00_finish_06_text_02">介绍和解释</string>
+<string name="level_00_finish_06_text_03">收集任务以获得分数</string>
+<string name="level_00_finish_06_text_04">你可以左右移动网络地址来查看完整内容。</string>
+<string name="level_00_finish_07_text_01"><b>注意：</b>我们希望通过这个应用程序帮助你防范一种常见的网络钓鱼形式。不幸的是，还有其他种类的钓鱼。如果你想了解更多，请点击菜单中的“更多信息”。</string>
+
+<!-- Finished XML text translations for the file -->
+<string name="level_00_finish_08_text_01"><b>开始吧！</b>\n\n在你因为无聊而从椅子上掉下来之前，让我们做得更互动一些，开始游戏吧。在前两个关卡中会教授必要的基础知识。在接下来的关卡中，你将学习如何根据网址检测钓鱼攻击。</string>
+
+<!-- Level E2 - 地址栏 -->
+<string name="level_01_intro_00_text_01_old"><b>地址栏</b>\n\n首先，你需要知道如何通过智能手机找到网址。每个安卓浏览器的操作方式都是一样的。这里有两点是重要的：\n\n1.) 找到地址栏。\n2.) 完整查看网址。</string>
+<string name="level_01_intro_00_text_01">“谁”部分是检测钓鱼网址的最重要区域。在术语中，它被称为域名。通常它会显示在状态栏中。\n\n在移动设备（智能手机和平板电脑）上，识别链接背后的网址的操作步骤因设备而异。通常，你需要按住链接大约2秒，但不要点击它。\n\n下面是两种最常用的系统：Android 和 iOS。</string>
+<string name="level_01_intro_00_button_01">我已经会了！</string>
+<string name="level_01_intro_01_text_01_old"><b>找到地址栏</b>\n\n许多网站内容繁多，实际网址可能占满整个显示屏，因此地址栏不可见。\n\n但是你可以用手指向下滑动网页（必要时多次滑动），直到到达网页顶部，地址栏出现。</string>
+<string name="level_01_intro_02_text_01_old"><b>完整查看网址</b>\n\n不幸的是，当地址栏出现时，你并不总能看到完整的网址，因为它往往过长。然而，查看整个网址非常重要。\n\n要查看整个网址，你需要用手指点击地址文本。</string>
+<string name="level_01_intro_01_text_01"><b>Android\n</b></string>
+<string name="level_01_intro_02_text_01"><b>iOS\n</b></string>
+<string name="level_01_intro_03_text_01"><b>完整查看网址</b>\n\n结果是，网址将被高亮显示，你将看到网址的结尾部分。</string>
+<string name="level_01_intro_03_text_02">现在你需要用手指向右拖动网址（必要时多次），直到你看到网址的开头。</string>
+<string name="level_01_intro_03_text_03">通过左右拖动，你可以查看整个网址。</string>
+<string name="level_01_finish_00_text_01"><b>完成！</b>\n\n你已成功完成了第二个介绍关卡。</string>
+<string name="level_01_finish_00_text_02"><b>提示：</b>在接下来的关卡中，你将学习如何区分可信任的网址和钓鱼网址（称为鱼叉）。</string>
+
+<!-- 将来按你在此学习的方式显示网址，以便检查它们。这在你收到带有链接的意外电子邮件时尤为重要。 -->
+<!-- LEVEL 1 - 网址 -->
+<string name="level_02_intro_00_text_01"><b>网址的结构</b>\n\n为了根据网址识别假网站，了解网址的结构非常重要。在这一关卡和接下来的关卡中，你将逐步学习这一点。\n\n首先是一个网址的例子：</string>
+<string name="level_02_intro_00_text_02_url">http://abo.spiegel.de/spiegel-digital</string>
+<string name="level_02_intro_01_text_01"><b>网址的重要组成部分</b>\n\n网址非常复杂。为此，我们将尽量简化解释。为此，我们将你访问的网站视为你的“对话者”。从现在开始，你将从网址中获得第一条重要信息，稍后我们将详细讨论。</string>
+<string name="level_02_intro_02_text_01"><b>网址的重要组成部分</b>\n\n下图总结了网址的各个部分在“对话”中代表的含义。</string>
+<string name="level_02_intro_02_text_02">紫色区域代表对话的安全级别。可能的选项是“http://”和“https://”。区别是什么，你将在更高的关卡中了解。蓝色区域为你提供有关你正在交谈对象的信息，橙色区域告诉你对话的主题。此区域可能会缺失。</string>
+<string name="level_02_intro_03_text_01"><b>重点——关于对话对象本身的信息</b>\n\n在这一关卡和接下来的几个关卡中，我们将主要处理网址中蓝色区域，因为了解你的对话者是谁非常重要！\n\n网址中<b>“http://”与第三个斜杠“/”之间的区域</b>提供了关于你对话对象的信息。你现在可以忽略其余区域。</string>
+<string name="level_02_intro_04_text_01"><b>对话对象区域的结构</b>\n\n此区域由点分隔为各个块。\n\n<b>记住：</b>这些块是从右向左读取的。</string>
+<string name="level_02_intro_05_text_01"><b>位置信息</b>\n\n第一个块（从右数）告诉你对话对象的“位置”。在本例中为“de”，表示德国。</string>
+<string name="level_02_intro_06_text_01"><b>对话对象的信息</b>\n\n第二个块（从右数）告诉你对话对象所属的“公司”。</string>
+<string name="level_02_intro_07_text_01"><b>部门信息</b>\n\n从第三个块（从右数）开始，所有剩余的块（可能有多个）描述对话对象的不同“部门”。</string>
+<string name="level_02_intro_08_text_01"><b>“谁”区域</b>\n\n网址中最重要的两个块是“对话对象信息”区域的前两个块（从右数）。我们称之为“谁”区域（公司+位置）。每个对话对象（即每个网站）必须在一个中心位置进行注册。已注册的名称不能再注册。这两个块告诉你<b>谁</b>是你的对话对象<b>真实</b>身份，因此你应该始终识别并检查它们。</string>
+<string name="level_02_intro_08_domain_description">“谁”区域\n（对话对象+位置）</string>
+<string name="level_02_intro_08_subdomain_description">部门</string>
+<string name="level_02_intro_09_text_01"><b>示例</b>\n\n下面是几个网址示例。首先，思考这些网址中的“谁”区域在哪里。然后通过继续来检查你的结果。</string>
+<string name="level_02_intro_10_text_01"><b>示例——解析</b>\n\n下面是几个网址示例。首先，思考这些网址中的“谁”区域在哪里。然后通过继续来检查你的结果。</string>
+<string name="level_02_outro">如果你不确定你的对话对象是谁，请直接向他寻求帮助。</string>
+<string name="level_02_exercise_text_01">现在轮到你了：\n\n根据之前的示例，你现在应该自己确定以下网址的“谁”区域。\n\n点击相应的地方，然后点击“检查”以检查你的答案。</string>
+<string name="level_02_task"><b>现在点击</b>以下网址的“谁”区域。</string>
+<string name="level_02_you_are_wrong">很遗憾，你未能识别出“谁”部分。因此，你失去了一条命。</string>
+<string name="level_02_you_are_correct">非常好！你识别出了“谁”区域。</string>
+<string name="level_finished"><b>完成！</b>\n\n恭喜！你成功完成了这一关卡。继续下一个关卡吧！</string>
+
+<!-- Level 2 - IP NO BRAND -->
+<string name="level_04_intro_00_text_01"><b>通过将IP地址作为“谁”区域进行的攻击</b>\n\n钓鱼者使用各种欺骗手段，使得看起来网址是可信的，尽管它们并非如此。\n\n你将逐步学习他们用来欺骗你的各种技巧。\n\n在这一关卡中，我们将介绍一种最简单的伎俩，即使用IP地址代替“谁”区域中的词汇。</string>
+<string name="level_04_intro_01_text_01"><b>IP地址</b>\n\n就像我们的房子通过街道名称来定位一样，计算机在互联网上通过所谓的IP地址进行识别。</string>
+<string name="level_04_intro_01_text_02">IP地址是由4个数字块组成的序列，这些数字块之间用点分隔。</string>
+<string name="level_04_intro_01_example_ip">示例: 192.168.10.15</string>
+<string name="level_04_intro_01_img_descr_computer">IP地址</string>
+<string name="level_04_intro_01_img_descr_house">地址</string>
+<string name="level_04_intro_03_text_02"><b>来自部门已知对话者的攻击</b></string>
+
+<!-- Level 3 - NO BRAND -->
+<string name="level_04_a_intro_00_text_01"><b>使用IP地址可能是合法的，但您应该对任何仅包含IP地址的网页保持怀疑，尤其是在对话伙伴的名称根本不显示时</b>\n\n另一种伎俩是不在网页地址中使用对话伙伴的名称。我们在这个级别中处理这种攻击。\n\n<b>检查网页地址中其他方是否出现时，以下是值得了解的:</b>\n\n在网页地址中，只能使用小写字母和数字，以及一个连字符（ - ）\n- 亚马逊变为 amazon.de\n- VHS变为 vhs.de\n- 德意志银行变为 deutsche-bank.de\n- 1&amp;1变为 1und1.de\n\n网页地址不一定以 www 开头（适用于真实和钓鱼网址）。\n\n网页地址之前不能包含用于元音的标记（�）。因此（�）常常被转换为（例如，“�”）在 www.muenchen.de 中为“ue”。</string>
+<string name="level_04_a_intro_00_text_02">一些网络钓鱼者甚至不屑于在网页地址中提及您的联系人名称。如果网页地址中不包含您的联系人名称，则<b>不要在该网站上输入任何数据，即使“关于”部分听起来可信！</b> <b>注意：在测验期间，您可能需要从右向左滚动以查看整个网址。</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在第二个示例中，您的对话伙伴是 secure-login.com（蓝色高亮）。这是网页地址的主要区域，属于“谁”的区域。<b>不要在该网站上输入任何数据，即使网页地址听起来可信！</b></string>
+
+<!-- Level 4 - SUBDOMAIN -->
+<string name="level_03_intro_00_text_01"><b>来自部门知名对话者的攻击</b>\n\n另一种伎俩是在网页地址中使用知名部门的名称。我们在这个级别中处理这种攻击。</string>
+<string name="level_03_intro_01_text_01"><b>纪念</b>\n\n在“http://”和第三个斜杠“/”之间的区域可以告诉您关于您的对话伙伴的信息（即通过网站）。\n\n该区域由点分隔，块从右到左读取。</string>
+<string name="level_03_intro_02_text_01"><b>部门的指定</b>\n\n网页地址中最重要的部分，“谁”部分也必须被网络钓鱼者注册，而已注册的名称不能重新注册。然而，部门区域（以浅蓝色突出显示）任何人都可以随意调用。</string>
+<string name="level_03_intro_03_text_02">网络钓鱼者可以轻易利用其部门中已知的对话者来欺骗您。因此不要依赖此区域。始终查看网页地址中最重要的两个块，“谁”区域。部门部分是否包含知名对话者，但“谁”区域却是无意义的、无关紧要的或甚至是不值得对话的联系人，则<b>不要在该网站上输入任何数据！</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在示例中，您的对话伙伴是 badcat.de 和 secure-update.com（蓝色）。这是网页地址的主要区域，属于“谁”的区域。您的对话伙伴不是 google.com 或 microsoft.com！这两个仅仅是每个公司的部门名称。这个区域与您对网页地址的调查无关。因此我们从右到左读取网页地址：<b>“谁”区域比部门更重要！</b></string>
+
+<!-- LEVEL 5 - deceiving path part -->
+<string name="level_09_intro_00_text_01"><b>通过使用已知对话者在对话主题中的攻击</b>\n\n另一种欺骗您的伎俩是在对话主题中使用一个知名对话伙伴。我们在这个级别中处理这种攻击。</string>
+<string name="level_09_intro_02_text_01"><b>对话主题的区域</b>\n\n现在我们想处理网页地址的另一个区域，即对话主题。\n\n<b>在第三个斜杠“/”之后的区域</b>告诉您与对话伙伴的对话内容，即该网站的内容。</string>
+<string name="level_09_intro_02_before_path">http://abo.spiegel.de</string>
+<string name="level_09_intro_02_path">spiegel-digital</string>
+<string name="level_09_intro_03_text_03">对话主题的区域掌握在网络钓鱼者手中。也就是说，他们可以任意命名此区域。他们还可以加入知名对话者或整个网页地址。因此请仅查看网页地址中最重要的两个块，“谁”区域，以检查您的对话伙伴实际上是谁。不要信任主题或对话主题。如果对话主题包含知名联系人或网页地址，而广告区域包含IP地址、无意义的、无关紧要的或甚至不值得对话的联系人，而不是您对话伙伴的名称，则<b>不要在该网站上输入任何数据！</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在示例中，您的对话伙伴是 95.130.22.98（IP地址）或 account-settings.de（蓝色背景）。这是网页地址中最重要的区域，属于“谁”的区域。您的对话伙伴不是 google.com 或 facebook.com（橙色背景）。这些只是对话主题的一部分。<b>此区域与您对网页地址的调查无关。</b>特别是对于这种攻击，确保您已经滚动到网页地址的开头，第一次出现 http(s):// 的地方是非常重要的。</string>
+
+<!-- LEVEL 6 - SIMILAR DOMAINS -->
+<string name="level_07_intro_00_text_01"><b>通过在“谁”区域中使用相似的对话者进行攻击</b>\n\n另一种欺骗您的伎俩是使用在“谁”区域中与您熟悉的名称非常相似的名称。我们在这个级别中处理这种攻击。</string>
+<string name="level_07_intro_03_text_02">您必须记住您通常访问的网页地址的“谁”部分是怎样的。即，网络钓鱼者可以注册与您熟悉的名称非常相似的名称。因此始终查看网页地址中最重要的两个块，“谁”区域。如果“谁”区域只包含您先前熟悉的“谁”区域的类似修改，则<b>不要在该网站上输入任何数据！</b>\n\n下面有三个适用此原则的钓鱼网页地址示例。在示例中，您的对话伙伴是 facebook-login.com、apple-support.com 或 ebay-verify.com（蓝色背景）。这些都是网页地址的“谁”区域。<b>这些“谁”区域与原始区域相似，但它们是假的！</b>\n\n要小心<b>英语单词</b>的名称和发音：\n\nappel.de 代替 apple.de\ngoogel.de 代替 google.de</string>
+<string name="level_07_intro_03_text_03"><b>1. 对话者出现在“谁”区域</b></string>
+<string name="level_07_intro_03_facebook_login">facebook-login.com</string>
+<string name="level_07_intro_04_text_02">网页地址中最重要的区域，“谁”区域，也必须被网络钓鱼者注册。网络钓鱼者可以在熟悉区域中插入一个错别字或拼写错误，然后注册该名称。因此始终查看网页地址中最重要的两个块，“谁”区域。逐字逐句地阅读此区域。如果“谁”区域包含错别字或拼写错误，则<b>不要在该网站上输入任何数据！</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在第一个示例中，您的对话伙伴是 mircosoft.com，在第二个 twitetr.com（蓝色背景）。<b>“谁”区域包含一个字母轮换。</b></string>
+<string name="level_07_intro_04_text_03"><b>在“谁”区域中的错别字/拼写错误</b></string>
+<string name="level_07_intro_04_fracebook">fracebook.com</string>
+<string name="level_07_intro_04_path">/login</string>
+<string name="level_07_intro_05_text_03"><b>3. “谁”区域中的间隔</b></string>
+<string name="level_07_intro_05_mircosoft">mircosoft.com</string>
+<string name="level_07_intro_05_path_01">/en-us</string>
+<string name="level_07_intro_05_path_02">/default.aspx</string>
+<string name="level_07_intro_06_text_01"><b>总结</b></string>
+<string name="level_07_intro_06_text_02">1.) 如果“谁”区域仅包含先前熟悉的“谁”区域的类似修改，则不要在该网站上输入任何数据！</string>
+<string name="level_07_intro_06_text_03">2.) 如果“谁”区域包含错别字，则在此处不要输入数据！</string>
+<string name="level_07_intro_06_text_04">3.) 如果“谁”区域包含拼写错误，则不要在该网站上输入任何数据！</string>
+<!-- LEVEL 7 - TYPOS -->
+<string name="level_07_intro_02_text_01"><b>通过在“谁”区域中使用错别字/拼写错误进行攻击</b>\n\n另一种欺骗您的伎俩是在“谁”区域的注册中插入一个错别字/拼写错误。我们在这个级别中处理这种攻击。\n\n<b>示例文本以作说明:</b>\n根据剑桥大学的一项研究，字母在一个单词中的顺序并不重要，唯一重要的是第一个和最后一个字母放在正确的位置。其余的字母可以混淆，您仍然可以毫无问题地阅读。这是因为人类大脑并不是逐字阅读每个字母，而是作为一个整体来识别单词。</string>
+<string name="level_07_intro_05_text_02">网页地址中最重要的部分，“谁”区域也必须被网络钓鱼者注册。网络钓鱼者可以简单地在熟悉的区域插入拼写错误，然后注册这个名称。因此，请始终关注网页地址中最重要的两个块，“谁”区域，<b>确切地</b>因为字母的转换很难识别。如果“谁”区域包含一个字母的转换，则<b>请勿在此网站上输入任何数据！</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在示例中，您的对话伙伴是 twitetr.com（蓝色背景）。<b>“谁”部分包含一个字母的轮换。</b></string>
+
+<!-- NONSENSE DOMAINS -->
+<string name="level_05_intro_00_text_01"><b>通过在“谁”区域中使用无意义或无厘头的名称进行攻击</b>\n\n另一种伎俩是在网页地址的“谁”区域中使用没有引用或甚至无意义的名称。我们在这个级别中处理这种攻击。</string>
+<string name="level_05_intro_02_text_03">网页地址中最重要的区域，“谁”区域也必须被网络钓鱼者注册。因此，请始终查看网页地址中最重要的两个块，“谁”区域包含的名称。如果没有意义或与您的对话伙伴的服务或业务无关，则<b>请勿在此网站上输入任何数据！</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在示例中，您的对话伙伴是 hsezis.de 或 badcat.com（蓝色背景）。这是网页地址的“谁”区域。<b>这些显然没有意义！</b></string>
+
+<!-- TRUSTWORTHY SOUNDING DOMAINS -->
+<string name="level_06_intro_00_text_01"><b>通过在“谁”区域中使用听起来可信的对话伙伴进行攻击</b>\n\n另一种欺骗您的伎俩是在网页地址的“谁”部分使用听起来可信的对话者。我们在这个级别中处理这种攻击。</string>
+<string name="level_06_intro_02_text_03">网页地址中最重要的区域，“谁”区域也必须被网络钓鱼者注册。因此请始终查看网页地址中最重要的两个块，“谁”部分。如果“谁”区域包含听起来可信的名称，但与您的对话伙伴的名称没有任何关系，则<b>请勿在此网站上输入任何数据！</b>\n\n下面是一个适用此原则的钓鱼网页地址示例。在示例中，您的对话伙伴是 security-update.de（蓝色背景）。这是网页地址的主要区域，“谁”区域。<b>即使网页地址听起来可信，也请勿在此输入任何数据！</b></string>
+
+<!-- LEVEL 8 - similar characters/digits in domain -->
+<string name="level_08_intro_00_text_01"><b>通过在“谁”区域中使用相似字符进行攻击</b>\n\n另一种欺骗您的伎俩是用其他看起来非常相似的字符或数字替换“谁”域中的字母。我们在这个级别中处理这种攻击。</string>
+<string name="level_08_intro_02_text_03">网页地址中最重要的区域，“谁”区域也必须被网络钓鱼者注册。网络钓鱼者可以将您熟悉的名称中的字母替换为其他相似的字符或数字，使得“谁”部分看起来几乎与您熟悉的名称相同。因此，请始终查看网页地址中最重要的两个块，“谁”部分。如果“谁”字段包含字母被其他相似字符或数字替换的内容，则<b>请勿在此网站上输入任何数据！</b>\n\n以下是使用此原则的钓鱼网页地址示例:</string>
+<string name="level_08_intro_02_text_04">一个“w”被两个“v”替换:</string>
+<string name="level_08_intro_02_text_05">一个“l”被一个“i”替换:</string>
+<string name="level_08_intro_02_text_06">一个“l”被一个“1”替换:</string>
+<string name="level_08_intro_02_text_07">其他示例:\nm --> rn\nh --> ln\nk --> lx\nd --> cl\nap --> qo\no --> 0（注意：仅使用小写字母）</string>
+
+<!-- LEVEL 9 - https and http -->
+<string name="level_10_intro_00_text_01"><b>对话的安全级别</b>\n\n与公司进行的讨论可以有低或高的安全级别。网页地址的第一个部分为您提供有关安全级别的信息。在这个级别中，我们处理这个区域。</string>
+<string name="level_10_intro_02_text_01"><b>安全级别的范围</b>\n\n在游戏中，您遇到了两种不同的安全级别变体，其含义您尚未遇到: https:// 和 http://。网页地址的第一个部分代表安全级别。我们将从 https:// 的解释开始，然后再介绍 http://。</string>
+<string name="level_10_intro_02_after_http_01">www.deutsche-bank.de/</string>
+<string name="level_10_intro_03_text_01"><b>https</b>\n\n捕获到的网页地址 https:// 表示这是一个高安全性的对话（如果浏览器没有警告您）。https:// 确保以下几点:\n\n1.) 您的对话不会被其他人窃听（通信加密）。\n\n2.) 您的对话伙伴可以向第三方可信任的机构确认自己的身份（对话伙伴的身份验证）。</string>
+<string name="level_10_intro_04_text_01"><b>https - 通信加密</b>\n\n捕获到的网页地址 https:// 表示对话在一个封闭的空间内进行，远离公众。因此，没有人会知道您与该网站谈论什么，或您向该网站提交了什么用户输入（用户名、密码、账户信息等）。因此，通信是加密的。特别是在输入密码或其他敏感数据时，加密非常重要。\n\n在以下示例中，您的对话伙伴是 deutsche-bank.de（蓝色背景）。它使用了 https://（紫色背景），即没有人可以读取您发送给 deutsche-bank.de 的数据。</string>
+<string name="level_10_intro_05_text_01"><b>https - 对话伙伴的身份验证</b>\n\nhttps:// 还向您保证，在“谁”区域中指示的对话伙伴确实是这个人。具体来说，您的对话伙伴的身份已经通过所谓的认证机构进行了验证。\n\n在以下示例中，您的对话伙伴是 deutsche-bank.de（蓝色背景）。网页地址以 https 开头（紫色背景）。因此，认证机构确认了您与 deutsche-bank.de 的身份。</string>
+<string name="level_10_intro_06_text_01"><b>http</b>\n\n捕获到的网页地址 http:// 表示对话的安全级别较低。http:// 表示以下几点:\n\n1.) 每个人都可以窃听您的对话，即通信<b>未</b>加密。\n\n2.) 您的对话伙伴没有向第三方可信任的机构确认身份。\n\n对于用户输入（用户名、密码、账户数据等），您处于公开状态，任何人都可以窃听。因此，通信是未加密的。此外，您无法确保“谁”区域中指定的对话伙伴实际上是他所声称的人。因此，您不应在这样的网页上输入敏感数据，即使“谁”区域正常。相反，您应该联系提供商并指出这个问题。</string>
+<string name="level_10_intro_07_text_01"><b>只在 https:// 上输入数据</b>\n\n如果您在某个网站上输入数据，您应该始终确保使用 https://，以便没有人可以读取您的数据并且它们不会落入错误之手。因此，如果您检查了“谁”区域，并且还使用了 https://，您可以放心，没有人可以读取您的输入，并且它们不会落入错误之手。</string>
+<string name="level_10_intro_08_text_01"><b>危险！绝不要仅依赖 https:// 的存在</b>，因为即使网络钓鱼者也可以使用 https://。因此，请始终查看“谁”区域，以确保您真的在与您想要沟通的人交流。\n\n在以下示例中，您的联系人是 phisher.de（蓝色背景），而不是 facebook。https:// 确认您的对话伙伴确实是 phisher.de，并且没有其他人可以窃听您与他的对话。<b>不要让 https:// 迷惑您，请勿在此输入任何数据！</b></string>
+<string name="level_10_intro_09_text_01"><b>评论</b>\n\n一些网站在用户需要输入数据时，默认情况下不使用 https://。<b>因此，您在输入数据时，始终应特别关注您的对话伙伴是谁，以及是否使用了 https://。如果未使用 https://，您可以尝试将网页地址中的 http:// 替换为 https:// 并按回车。</b> 关于 https:// 的更多信息，请参见第 10 级。\n\n在这个级别中请勿输入任何 http:// 网页地址，即使“谁”区域正常。还要注意使用 https:// 的钓鱼网站！</string>
+<!-- FINAL REMARKS LEVEL -->
+<string name="level_11_intro_00_text_01"><b>恭喜！</b>\n\n你已经完成所有关卡。最后，我们想给你一些宝贵的提示。</string>
+<string name="level_11_intro_01_text_01"><b>混淆但合法的网页地址</b>\n\n在这个游戏中，你已经学会了如何通过网页地址判断你是否在钓鱼网站上。为了以易于理解的方式描述许多相关特征，我们引入了将访问的网站视为你的对话伙伴的类比。网页地址为你提供了有关对话的重要信息。\n\n不幸的是，有时合法网站的网页地址看起来会令人怀疑，像钓鱼网站的地址一样。</string>
+<string name="level_11_intro_02_text_01"><b>混淆但合法的网页地址</b>\n\nCommerzbank的官方网站可以通过下面给出的网页地址访问。Who区域在commerzbank.com（以蓝色突出显示）。到目前为止，这个网页地址看起来非常可信，确实如此。</string>
+<string name="level_11_intro_02_text_02">如果用户现在想进行网上银行，他将访问下面给出的网页地址。在这里，Who区域一下子变成了commerzbanking.de（以蓝色突出显示）。正如你所看到的，Who部分只是常规Commerzbank网站的一个类似变体，也就是说，你会将这个网站识别为钓鱼网站。这不是一个钓鱼网页地址。</string>
+<string name="level_11_intro_04_text_01"><b>混淆但合法的网页地址</b>\n\n这里还有另一个合法网页地址的例子，第二个看起来像钓鱼网页地址，但并非如此：</string>
+<string name="level_11_intro_03_text_01"><b>帮助我们让互联网更安全</b>\n\n有时合法的网页地址可能看起来像钓鱼网页地址。这就是为什么<b>要准确知道</b>你访问的网站的区域非常重要！在这样的混淆情况下，我们建议你联系相关公司或银行。例如，你可以通过谷歌搜索引擎找到联系信息。切勿使用潜在钓鱼网站提供的联系信息。在确认之前不要输入任何数据！首先，这样你可以确保不会在假网站上输入数据。其次，你可以投诉为什么该公司或银行使用并促成如此混淆的网页地址，从而使互联网变得稍微安全一点。</string>
+<string name="level_11_intro_05_text_01"><b>https://</b>\n\n你已经了解到，https://网页地址确保了两件事：\n\n1.) 你的对话没有其他人（通信加密）。\n\n2.) 你的对话伙伴可以向第三方可信机构证明自己的身份（对话伙伴的身份验证）。</string>
+<string name="level_11_intro_06_text_01"><b>https:// - 对话伙伴的身份验证</b>\n\n这意味着一个所谓的受信认证机构保证对话伙伴确实是他所声称的身份。该认证机构会进行某些身份检查，并在成功审核Who区域后发布一个所谓的证书。该证书保证你正在与Who区域中列出的真实个人交谈。</string>
+<string name="level_11_intro_07_text_01"><b>https:// - 身份测试</b>\n\n不幸的是，认证机构之间的激烈竞争和价格压力导致证书的颁发有时比较表面和简化。证书可能会确认本不应确认的身份！因此，推出了特殊证书（扩展验证SSL证书），这些证书由专门的认证机构在更严格的身份验证下颁发。一些互联网浏览器（不幸的是，Android浏览器不支持）提供了识别这些具有特殊证书的网站的功能，识别方式是绿色区域（锁和单独显示的公司名称）。</string>
+<string name="level_11_intro_07_text_02">有关更多信息，请访问<b>bsi-fuer-buerger.de (www.bsi-fuer-buerger.de)。</b> 在这里，你将一般找到一些关于如何安全浏览网页的信息。\n\n祝你在识别钓鱼网站时好运。不要让自己上当！</string>
+<string name="level_11_intro_08_text_01"><b>点击链接可能很危险！</b>\n\n在这个游戏中，你学会了如何通过网页地址判断你是否在钓鱼网站上。我们重点关注了当你在网站上时如何检测攻击，因为链接也可能是假的。\n\n然而，如果你一开始就不信任一条消息，切勿不加思考地点击链接。通过点击恶意链接可能会下载恶意软件。因此，你应该在点击之前检查网页地址。了解你可以依赖什么信息是很重要的；通常在网页上下方显示。对于使用二维码扫描器扫描的网页地址特别关键。有些扫描器会直接打开网页而不显示网页地址。因此，我们推荐SECUSO团队开发的隐私友好的二维码扫描器。</string>
+<string name="level_11_intro_09_text_01"><b>更多技巧</b>\n\n你已经学会了许多钓鱼者用来欺骗互联网用户的技巧。然而，还有其他一些技巧我们在游戏中没有涉及。以下只是一些例子：\n\n<u><i>短网址</i></u>\n钓鱼者可能会使用所谓的“短链接”（Tiny-URL）来掩饰真正的目标。\n\n例如，http://tinyurl.com/nskuf85 \n指向NoPhish网站\n\nhttps://www.secuso.informatik.tu-darmstadt.de/de/secuso-home/research/results/nophish \n\n短链接是网页地址的简化形式。为了便于输入网页地址。你只能在解析后检查URL。你可以使用以下服务来做到这一点：\n\n<b>http://getlinkinfo.com/</b> \n\n如果不点击链接而手动输入已知的Who区域的网页地址，你就更安全。</string>
+<string name="level_11_intro_10_text_01"><u><i>引荐</i></u>\n每当用户通过另一页上的链接访问网站时，都会提交一个引荐。通过所谓的反引荐工具，可以“掩饰”你最初来自哪个网站。例如，通过GMX调用的链接，首先会在实际目标URL之前设置一个反引荐器。如果一个链接通过GMX被调用，反引荐器在实际目标URL之前设置。原始页面在这里是<u>gmx.net</u>，目标页面是"<u>info.allyouneed.com</u>"。\n\nhttps://<b>deref-gmx.net</b>/mail/client/dereferrer/?redirectUrl=http%3A%2F%2F<b>info.allyouneed.com</b>%2Fgo%2F0%2F1LNSD479-1LM9YF2U-1L9EOOAX-VRYAL9.html%3Frid%3D12YEEUIW-19J53LF\n\n在这里，网络浏览器首先调用gmx页面，然后再转发到<u>info.allyouneed.com</u>。Who区域是<u>deref-gmx.net</u>。不幸的是，这并不能说明链接的实际目标。此方法被用来隐藏原始URL中的秘密数据，例如引用网站的存在。</string>
+<string name="level_11_intro_11_text_01"><u><i>国家代码</i></u>\n钓鱼者还尝试使用其他国家代码：\n\nhttps://www.amazon.ss\n\t\t\t\t\t\t\t\t\t\t\t\t而不是\nhttps://www.amazon.de\n\n在本次培训中，重点是对话伙伴的名称。通常这就足够了。为了确保，检查国家代码也是必要的。这里不仅有国家代码，还有城市代码（例如 .Berlin）或组织代码（.org）。\n\n因此，在注册页面时，不仅要记住你在Who部分所谈论的人的名字，还要记住国家代码。</string>
+<string name="level_11_intro_12_text_01"><u><i>心理技巧</i></u>\n钓鱼者常常使用技巧来让你点击链接。在过去，有时会施加（时间）压力，否则帐户将被封锁。一个新的技巧是向你提供两个链接。例如，可能会显示已进行银行交易的消息。然后会提供一个链接供“我没有进行任何交易”，以及一个链接供“是的，我进行了这笔交易”。</string>
+
+<!-- FINAL APP SCREEN -->
+<string name="congrats">恭喜</string>
+<string name="text_final_app_screen">你已经完整地玩完了游戏。我们希望你学到了很多，现在已经对常见的钓鱼技巧做好了准备。如果你想继续练习，特别是刷新你所学的内容，你可以在每个关卡中跳过关卡概览。\n\n最后，请花时间进行一次后测：通过评估你对这个主题的知识，你可以更好地理解这个问题。</string>
+<string name="play_again">再玩一次</string>
+<string name="go_to_final_test">去做后测</string>
+<!-- TASKS AND SOLUTION SCREENS FROM LEVEL 3 -->
+<string name="legitimate">合法</string>
+<string name="yes">是</string>
+<string name="no">否</string>
+<string name="fake">假</string>
+<string name="URLs">正确:</string>
+<string name="level_failed_title">关卡失败！</string>
+<string name="level_failed_text">不幸的是，你已经失去了所有生命。请再试一次！</string>
+<string name="level_failed_button">重启关卡</string>
+<string name="url_timeout_title">时间已到！</string>
+<string name="url_timeout_text">你太慢了。你失去了一条生命！</string>
+<string name="url_timeout_button">继续</string>
+<string name="level_cancel_title">取消关卡？</string>
+<string name="level_cancel_text">如果你离开此页面，你的分数将不会被保存。你确定吗？</string>
+<string name="level_cancel_positive_button">离开关卡</string>
+<string name="level_cancel_negative_button">继续游戏</string>
+<string name="level_restart_title">重启关卡？</string>
+<string name="level_restart_text">重启关卡时，你的分数将不会被保存。你确定吗？</string>
+<string name="level_restart_positive_button">重启关卡</string>
+<string name="level_restart_negative_button">继续游戏</string>
+<string name="ok">好的</string>
+<string name="url_task_providername">你想访问\n<b>“${providername}”</b>的网站。</string>
+<string name="url_task_description">你信任这个网页地址吗？</string>
+<string name="url_task_desciription_level_10">你会在这里输入数据吗？</string>
+<string name="url">示例网址</string>
+<string name="level_score">关卡分数:</string>
+<string name="total_score">总积分:</string>
+<string name="level_max_score">可达关卡积分:</string>
+<string name="phish_proof_01">是的，这个网页地址是假的。现在请展示我们Who区域。<b>点击</b>适当的地方。</string>
+<string name="phish_proof_09">是的，你的决定是正确的。现在请展示我们Who区域。<b>点击</b>适当的地方。</string>
+<string name="you_are_wrong">不正确！你被欺骗了。这是一个假的网页地址。因此，你失去了一条生命。</string>
+<string name="oversafe_text">这个网页地址不假。你可以信任它。</string>
+<string name="oversafe_02">但是，如果你不确定，最好谨慎行事，不输入任何数据。在这种情况下，联系相关方并询问可疑网页地址的可信度是有意义的。或者，你可以在搜索引擎中输入对话伙伴的名称。搜索结果中的第一条可能会显示正确的网站。</string>
+<string name="you_are_correct">干得好。这个网页地址不假，你可以信任它。</string>
+<string name="you_guessed">不幸的是，你没有展示我们Who区域。</string>
+<string name="level_10_you_are_correct">干得好。你可以完全信任这个网页地址。</string>
+<string name="level_10_you_are_wrong">不幸的是，这是错误的。</string>
+<string name="level_10_you_are_correct_phish">干得好。那是正确的。要小心这个网页地址！</string>
+<string name="you_found_the_phish">你识别了钓鱼网站。恭喜你。</string>
+<string name="exercise">练习</string>
+<string name="intro">介绍和说明</string>
+<string name="finished">完成</string>
+<string name="button_verify">检查</string>
+<string name="attack_reminder"><b>记住：</b> 不要轻信...</string>
+<string name="oversafe">过于谨慎</string>
+<string name="correct">正确</string>
+<string name="wrong">不正确</string>
+<string name="select_part">你必须通过点击选择网页地址的一部分。</string>
+<!-- subdomain -->
+<string name="level_03_reminder"><b>记住：</b>如果部门的部分包含知名对话者，并且包含Who区域，但却是无意义、无关或甚至不可信的对话者，而不是你的对话者的名字，那么请不要在这个网站上输入任何数据！</string>
+<string name="reminder_subdomain">3.) 如果部门的部分包含知名对话者，并且包含Who部分，但却是无意义、无关或甚至不可信的对话者，而不是你的对话者的名字，那么请不要在这个网站上输入任何数据！</string>
+
+<!-- ip -->
+<string name="level_04_reminder"><b>记住：</b>在“http://”和第三个斜杠“/”之间的区域是IP地址（由4个数字块组成，以点分隔），这是Who区域。请不要在这个网站上输入任何数据！</string>
+<string name="reminder_ip">1.) 在“http://”和第三个斜杠“/”之间的区域是IP地址，这是Who区域。请不要在这个网站上输入任何数据！</string>
+
+<!-- totally unrelated -->
+<string name="level_04_a_reminder"><b>记住：</b>如果网页地址不包含你的联系人名称，那么即使Who区域听起来可信，也请不要在这个网站上输入任何数据！</string>
+<string name="reminder_no_brand">2.) 如果网页地址不包含你的联系人名称，那么即使Who部分听起来可信，也请不要在这个网站上输入任何数据。</string>
+
+<!-- nonsense -->
+<string name="level_12_reminder"><b>记住：</b>如果Who区域的对话者毫无意义或与服务无关，请不要在此输入任何数据！</string>
+<string name="reminder_nonsense">3.) 如果Who区域的对话者毫无意义或与服务无关，请不要在这个网站上输入任何数据！</string>
+
+<!-- unrelated but trustworthy -->
+<string name="level_13_reminder"><b>记住：</b>如果Who区域的对话者听起来可信，但与您的联系人公司没有任何关系，则请不要在此输入任何数据！</string>
+<string name="reminder_sounding_trustworthy">4.) 如果Who区域的对话者听起来可信，但与您的联系人公司没有任何关系，则请不要在此输入任何数据！</string>
+
+<!-- misleading (facebook-login) -->
+<string name="level_06_reminder"><b>记住：</b>如果Who区域只包含你之前熟悉的Who区域的类似修改，请不要在这个网站上输入任何数据！</string>
+<string name="reminder_misleading">5.) 如果Who区域只包含你之前熟悉的Who区域的类似修改，请不要在这个网站上输入任何数据！</string>
+
+<!-- typo -->
+<string name="level_07_reminder"><b>记住：</b>如果Who区域包含拼写错误或错字，请不要在这个网站上输入任何数据！</string>
+<string name="reminder_typo">6.) 如果Who区域包含拼写错误或错字，请不要在这个网站上输入任何数据！</string>
+
+<string name="reminder_brand_in_domain">5.) 如果Who区域只包含你之前熟悉的Who区域的类似修改，请不要在这个网站上输入任何数据！</string>
+<string name="reminder_typosquat">7.) 如果Who区域包含拼写错误，请不要在这个网站上输入任何数据！</string>
+
+<!-- homographic -->
+<string name="level_08_reminder"><b>记住：</b>如果Who区域包含字母用其他类似字符或数字替换，请不要在这个网站上输入任何数据！</string>
+<string name="reminder_similar_chars">7.) 如果Who区域包含字母用其他类似字符或数字替换，请不要在这个网站上输入任何数据！</string>
+
+<!-- hostname in path -->
+<string name="level_05_reminder"><b>记住：</b>如果包含你已知联系人或网页地址的对话主题区域，并且包含Who区域，但IP地址、无意义、无关或甚至不可信的对话者而不是你的对话者的名字，则请不要在这个网站上输入任何数据！</string>
+<string name="reminder_deceiving_path">4.) 如果包含你已知联系人或网页地址的对话主题区域，并且包含Who区域，但IP地址、无意义、无关或甚至不可信的对话者而不是你的对话者的名字，则请不要在这个网站上输入任何数据！</string>
+
+<!-- http/https -->
+<string name="level_10_reminder"><b>记住：</b>在这一关，你应该拒绝不以https://开头的网页地址。当然，你还必须检查网页地址是否为钓鱼地址。</string>
+<string name="level_10_reminder_http_legitimate"><b>记住：</b>这个网页地址是合法的，但仅使用http://。因此，你不能依赖于你的对话不会被任何第三方窃听。此外，使用http://你也无法确保你的对话者在Who区域中所表现出的身份。</string>
+<string name="level_10_reminder_http_phish"><b>记住：</b>这是一个假网页地址，使用http://。如果你信任这个网页地址，不仅会把数据交给钓鱼者，还会交给潜在的第三方。</string>
+<string name="level_10_reminder_https_phish"><b>记住：</b>这是一个假网页地址，使用https://。在这里，你只能确保数据被钓鱼者读取，而没有第三方。此外，你可以确保钓鱼者在Who区域所声称的身份是真实的。</string>
+<string name="title_activity_about">关于我们</string>
+<string name="hello_world">你好，世界！</string>
+<string name="number">10</string>
+<string name="title">标题</string>
+<string name="level_description">关卡描述</string>
+<!-- CONTENT DESCRIPTIONS FOR ACCESSIBILITY -->
+<string name="content_desc_credits">鸣谢</string>
+<string name="content_desc_back_button">返回按钮</string>
+<string name="content_desc_forward_button">继续按钮</string>
+<string name="content_desc_facebook_screenshot_original">Facebook 截图 - 原始</string>
+<string name="content_desc_facebook_screenshot_fake">Facebook 截图 - 假冒</string>
+<string name="content_desc_symbol_book">书</string>
+<string name="content_desc_symbol_pen">笔</string>
+<string name="content_desc_smiley_bored">无聊的脸</string>
+<string name="content_desc_button_send">发送按钮</string>
+<string name="content_desc_medal">奖牌</string>
+<string name="content_desc_addr_bar">地址栏</string>
+<string name="content_desc_i_know_that_btn">我已经会做那个了</string>
+<string name="content_desc_suprised">惊讶的脸</string>
+<string name="content_desc_find_addr_bar">带地址栏的截图网站</string>
+<string name="content_desc_click_addr_bar">点击地址文本</string>
+<string name="content_desc_slide_to_right">向右移动地址</string>
+<string name="content_desc_start_of_address">到达网页地址的开头</string>
+<string name="content_desc_click_here_button">点击这里</string>
+<string name="content_desc_arrow_up_de">箭头指向上“de”</string>
+<string name="content_desc_arrow_up_spiegel">箭头指向上“spiegel”</string>
+<string name="content_desc_arrow_up_abo">箭头指向上“abo”</string>
+<string name="content_desc_globe">地球仪</string>
+<string name="content_desc_attention">危险</string>
+<string name="content_desc_puzzle_units">拼图块</string>
+<string name="content_desc_house">房子</string>
+<string name="content_desc_computer">计算机</string>
+<string name="content_desc_confused_pinguin">困惑的企鹅</string>
+<string name="content_desc_innocent_looking_smiley_angel">看起来无辜的微笑天使</string>
+<string name="content_desc_twitter_logo">Twitter 徽标</string>
+<string name="content_desc_one">数字一</string>
+<string name="content_desc_seven">数字七</string>
+<string name="content_desc_padlock">挂锁</string>
+<string name="content_desc_star">星星</string>
+<string name="content_desc_tik">勾选标记</string>
+<string name="content_desc_play">播放按钮</string>
+<string name="content_desc_level_overview">关卡概览按钮</string>
+<string name="content_desc_google_play">Google Play 按钮</string>
+<string name="content_desc_more_info">更多信息按钮</string>
+<string name="content_desc_about">关于我们按钮</string>
+<string name="content_desc_cross">返回</string>
+<string name="content_desc_smiling_face">微笑的脸</string>
+<string name="content_desc_o_face">中性脸</string>
+<string name="content_desc_sad_face">伤心的脸</string>
+<string name="content_desc_disappointed_face">失望的脸</string>
+<string name="content_desc_speech_balloon_amazon">带亚马逊徽标的对话气泡</string>
+<string name="content_desc_security_level_high">安全卫士</string>
+<string name="content_desc_link">食指 - 点击链接</string>
+<string name="content_desc_swipe_right">向右滑动</string>
+<string name="content_desc_start_level_button">开始关卡</string>
+<string name="content_desc_single_tip">触摸网页地址的适当位置</string>
+<string name="content_desc_life_1">生命心形 1</string>
+<string name="content_desc_life_2">生命心形 2</string>
+<string name="content_desc_life_3">生命心形 3</string>
+<string name="title_activity_app_end">结束语</string>
+<string name="secuso_logo">SECUSO 徽标</string>
+<string name="content_desc_confetti">五彩纸屑</string>
+<string name="shown_urls">显示的地址：</string>
+<string name="correct_urls">检测到的地址：</string>
+
+<string-array name="fromMails">
+    <!-- no examples until we decide to do it again -->
+    <!-- <item>phish@no-phish.de</item>  -->
+</string-array>
+
+<!--###ABOUT###-->
+<string name="version_number" translatable="false">版本 1.4.0</string>
+<string name="about_author">作者：</string>
+<string name="about_author_names" translatable="false">Clemens Bergmann, Gamze Canova, Phlipp Rack,</string>
+<string name="about_author_contributors">贡献者和 Chris Wilder 的英文翻译。</string>
+<string name="about_affiliation">与以下单位合作</string>
+<string name="privacy_friendly">该应用由达姆施塔特技术大学的研究小组 SECUSO 开发。源代码根据 GPLv3 许可。图片版权归达姆施塔特大学和 Google 所有。</string>
+<string name="more_info">更多信息请访问：</string>
+<string name="github" translatable="false"><a href="https://github.com/SecUSo/nophish">Github 仓库</a></string>
+<string name="secusourl" translatable="false"><a href="https://www.secuso.org/pfa">SECUSO 网站</a></string>
+<string name="cont">继续</string>
+<string name="proceedToLevel">进入关卡 %s</string>
+<string name="start">开始</string>
+<string name="success">成功</string>
+<string name="scoreString">%s 分</string>
+<string name="check">检查</string>
+</resources>
