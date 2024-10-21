@@ -304,7 +304,6 @@
 <string name="level_11_intro_09_text_01"><b>更多技巧</b>\n\n你已经学会了许多钓鱼者用来欺骗互联网用户的技巧。然而，还有其他一些技巧我们在游戏中没有涉及。以下只是一些例子：\n\n<u><i>短网址</i></u>\n钓鱼者可能会使用所谓的“短链接”（Tiny-URL）来掩饰真正的目标。\n\n例如，http://tinyurl.com/nskuf85 \n指向NoPhish网站\n\nhttps://www.secuso.informatik.tu-darmstadt.de/de/secuso-home/research/results/nophish \n\n短链接是网页地址的简化形式。为了便于输入网页地址。你只能在解析后检查URL。你可以使用以下服务来做到这一点：\n\n<b>http://getlinkinfo.com/</b> \n\n如果不点击链接而手动输入已知的Who区域的网页地址，你就更安全。</string>
 <string name="level_11_intro_10_text_01"><u><i>引荐</i></u>\n每当用户通过另一页上的链接访问网站时，都会提交一个引荐。通过所谓的反引荐工具，可以“掩饰”你最初来自哪个网站。例如，通过GMX调用的链接，首先会在实际目标URL之前设置一个反引荐器。如果一个链接通过GMX被调用，反引荐器在实际目标URL之前设置。原始页面在这里是<u>gmx.net</u>，目标页面是"<u>info.allyouneed.com</u>"。\n\nhttps://<b>deref-gmx.net</b>/mail/client/dereferrer/?redirectUrl=http%3A%2F%2F<b>info.allyouneed.com</b>%2Fgo%2F0%2F1LNSD479-1LM9YF2U-1L9EOOAX-VRYAL9.html%3Frid%3D12YEEUIW-19J53LF\n\n在这里，网络浏览器首先调用gmx页面，然后再转发到<u>info.allyouneed.com</u>。Who区域是<u>deref-gmx.net</u>。不幸的是，这并不能说明链接的实际目标。此方法被用来隐藏原始URL中的秘密数据，例如引用网站的存在。</string>
 <string name="level_11_intro_11_text_01"><u><i>国家代码</i></u>\n钓鱼者还尝试使用其他国家代码：\n\nhttps://www.amazon.ss\n\t\t\t\t\t\t\t\t\t\t\t\t而不是\nhttps://www.amazon.de\n\n在本次培训中，重点是对话伙伴的名称。通常这就足够了。为了确保，检查国家代码也是必要的。这里不仅有国家代码，还有城市代码（例如 .Berlin）或组织代码（.org）。\n\n因此，在注册页面时，不仅要记住你在Who部分所谈论的人的名字，还要记住国家代码。</string>
-<string name="level_11_intro_12_text_01"><u><i>心理技巧</i></u>\n钓鱼者常常使用技巧来让你点击链接。在过去，有时会施加（时间）压力，否则帐户将被封锁。一个新的技巧是向你提供两个链接。例如，可能会显示已进行银行交易的消息。然后会提供一个链接供“我没有进行任何交易”，以及一个链接供“是的，我进行了这笔交易”。</string>
 
 <!-- FINAL APP SCREEN -->
 <string name="congrats">恭喜</string>
