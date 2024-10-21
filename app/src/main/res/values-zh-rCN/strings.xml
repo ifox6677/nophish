@@ -308,7 +308,7 @@
 <!-- FINAL APP SCREEN -->
 <string name="congrats">恭喜</string>
 <string name="text_final_app_screen">你已经完整地玩完了游戏。我们希望你学到了很多，现在已经对常见的钓鱼技巧做好了准备。如果你想继续练习，特别是刷新你所学的内容，你可以在每个关卡中跳过关卡概览。\n\n最后，请花时间进行一次后测：通过评估你对这个主题的知识，你可以更好地理解这个问题。</string>
-<string name="play_again">再玩一次</string>
+
 <string name="go_to_final_test">去做后测</string>
 <!-- TASKS AND SOLUTION SCREENS FROM LEVEL 3 -->
 <string name="legitimate">合法</string>
