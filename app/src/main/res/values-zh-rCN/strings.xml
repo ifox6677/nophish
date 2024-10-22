@@ -319,7 +319,6 @@
 <string name="level_failed_title">关卡失败！</string>
 <string name="level_failed_text">不幸的是，你已经失去了所有生命。请再试一次！</string>
 <string name="level_failed_button">重启关卡</string>
-<string name="url_timeout_title">时间已到！</string>
 <string name="url_timeout_text">你太慢了。你失去了一条生命！</string>
 <string name="url_timeout_button">继续</string>
 <string name="level_cancel_title">取消关卡？</string>
